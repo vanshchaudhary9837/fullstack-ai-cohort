@@ -1,0 +1,54 @@
+// function - Reusable block of code that performs a specific task.
+
+// function declaration:
+function greet(name){
+    console.log("Hello, " + name);
+}
+
+greet("Aman");
+greet("Priya");
+
+
+// function expression:
+const greet = function(name) {
+    console.log("Hello, " + name);
+};
+
+greet("Aman");
+
+
+//Anonymoud function: 
+const sayHi = function() {
+    console.log("Hi!");
+};
+
+//Arrow function:
+// Regular function expression
+const add = function(a, b) {
+    return a + b;
+};
+
+// Arrow function — same thing
+const add = (a, b) => {
+    return a + b;
+};
+
+// Default parameters: - If no argument is passed, use a default value:
+function greet(name = "Guest"){
+    console.log("Hello " + name)
+}
+greet("Aman");
+greet();   // Hello, Guest
+
+
+// Rest Parameters - Sometimes you don't know how many arguments will be passed. Use ... to collect them all into an array:
+function sum(...num){
+    let total = 0;
+    for (const n of num) {
+        total += n;
+    }
+    return total;
+}
+
+console.log(sum(4,3,2,1)); //10
+console.log(sum(4,3,2,1,1,2,3,4)); //20
