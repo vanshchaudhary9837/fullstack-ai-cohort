@@ -74,3 +74,4 @@ processUser("Aman", welcome);
 (function (){
     console.log("It's a IIFE Function");
 })();
+
