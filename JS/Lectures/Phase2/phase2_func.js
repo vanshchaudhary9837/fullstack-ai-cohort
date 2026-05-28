@@ -52,3 +52,25 @@ function sum(...num){
 
 console.log(sum(4,3,2,1)); //10
 console.log(sum(4,3,2,1,1,2,3,4)); //20
+
+
+// Callback Function -  A callback is a function that is passed as an argument to another function, to be called later.
+
+function processUser(name, callback) {
+    console.log("Processing user: " + name);
+    callback(name);
+}
+
+function welcome(name) {
+    console.log("Welcome, " + name);
+}
+
+processUser("Aman", welcome);
+// Processing user: Aman
+// Welcome, Aman
+
+
+// IIFE -  Immediately Invoked Function Expression - An IIFE is a function that runs the moment it's defined.
+(function (){
+    console.log("It's a IIFE Function");
+})();
