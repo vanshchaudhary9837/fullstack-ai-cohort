@@ -90,3 +90,121 @@ console.log(Number(x));     // NaN
 
 console.log(parseInt("500px"));    // 500
 
+
+// Operators
+
+console.log(a + b);
+console.log(25%4);
+console.log(6**2);
+console.log(++a);
+console.log(--a);
+console.log(a += 20);
+console.log("10"==10);
+console.log("10"===10);
+ var y = true;
+ var z = false;
+ console.log(y && z);
+ console.log(y || z);
+ console.log(y != z);
+
+ 
+
+// Strings
+
+console.log(studentName.length);
+console.log(studentName.toUpperCase());
+console.log(studentName.toLowerCase());
+console.log(studentName.includes("Javascript"));
+var word = "Hello World apple";
+console.log(word.substring(6, 11));
+console.log(word.replace("apple", "mango"));
+const str = "HTML,CSS,JS";
+const arr = str.split(",");
+console.log(arr); // ["HTML", "CSS", "JS"]
+
+
+
+//Numbers
+ console.log(Math.round(4.7));
+ console.log(Math.sqrt(81));
+ console.log(Math.max(10, 20, 5, 99));
+ console.log(Math.min(10, 20, 5, 99));
+console.log(parseInt("99.99"));
+console.log(Number.isInteger(25));
+let n = 3.14159;
+console.log(n.toFixed(2));
+
+
+ 
+
+// Conditionals
+
+if (n > 0){
+    console.log("n is a positive number");
+} else if(n<0){
+    console.log("n is a negative number");
+} else{
+    console.log("n is a zero");
+}
+
+const num1 = 10;
+const num2 = 5;
+const operator = "+"; // +, -, *, /
+
+let result;
+
+switch (operator) {
+  case "+":
+    result = num1 + num2;
+    break;
+
+  case "-":
+    result = num1 - num2;
+    break;
+
+  case "*":
+    result = num1 * num2;
+    break;
+
+  case "/":
+    result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+    break;
+
+  default:
+    result = "Invalid operator";
+}
+
+console.log(result);
+
+
+// truthy and Falsy
+
+let value = "Hello"; // try: "", 0, null, undefined, false
+
+if (value) {
+  console.log("Valid");
+} else {
+  console.log("Invalid");
+}
+
+
+
+// Logical Thinking Questions
+
+// 1. 
+let num3 = 20;
+let num4 = 14;
+
+if (num3 > num4){
+    console.log(`${num3} is greater than ${num4}`);
+} else if(num3 < num4){
+    console.log(`${num4} is greater than ${num3}`);
+} else{
+    console.log(`${num3} is equal to ${num4}`);
+}
+
+
+// 2.
+if (num3 > 10 && num3 < 50){
+    console.log(`${num3} is under limit`);
+} else console.log("Outside of limit")
