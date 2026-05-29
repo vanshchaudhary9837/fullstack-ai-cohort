@@ -65,3 +65,28 @@ console.log(dataBigNum);
 
 // # Type Conversion & Coercion
 
+var newString = "50";
+var newNum = 100;
+var booleanString = "true";
+
+console.log(Number(newString));
+console.log(String(newNum));
+console.log(Boolean(booleanString));
+
+console.log(typeof(Number(newString)));
+console.log(typeof(String(newNum)));
+console.log(typeof(Boolean(booleanString)));
+
+console.log("5" + 3);     // "53"   ← string concatenation
+console.log("5" - 3);     // 2      ← number subtraction
+console.log("5" * "2");   // 10
+console.log(true + 1);    // 2      (true becomes 1)
+console.log(false + 1);   // 1      (false becomes 0)
+console.log(null + 1);    // 1      (null becomes 0)
+console.log(undefined + 1); // NaN  (undefined becomes NaN)
+
+var x = "123abc";
+console.log(Number(x));     // NaN
+
+console.log(parseInt("500px"));    // 500
+
