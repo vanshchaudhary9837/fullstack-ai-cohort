@@ -88,3 +88,15 @@ console.log(arr);
 console.log(Array.__proto__);
 
 
+// OOPs
+
+let song1 = {
+    songName : 'Cry on me',
+    albumName : 'Hurry up tomorrow',
+    singer : 'Weekend',
+    duration : 3.5,
+    isLiked : true
+}
+
+// Now there are multiple songs out there, which have same keys but diff values. 
+// There is no sense to make diff obj for all those songs - not an efficient way
